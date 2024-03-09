@@ -1,0 +1,36 @@
+[debug] > Exec(run, None, None)
+[warn] build source files have changed
+[warn] modified files: 
+[warn]   C:\Users\HP\IdeaProjects\MiniProjet_SPARK\build.sbt
+[warn] Apply these changes by running `reload`.
+[warn] Automatically reload the build when source changes are detected by setting `Global / onChangedBuildSource := ReloadOnSourceChanges`.
+[warn] Disable this warning by setting `Global / onChangedBuildSource := IgnoreSourceChanges`.
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 3 Scala sources to C:\Users\HP\IdeaProjects\MiniProjet_SPARK\target\scala-2.13\classes ...
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:1:19: object poi is not a member of package org.apache
+[error] import org.apache.poi.xssf.usermodel.XSSFWorkbook
+[error]                   ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:2:19: object poi is not a member of package org.apache
+[error] import org.apache.poi.ss.usermodel.{Cell, Row, Sheet, Workbook}
+[error]                   ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:9:17: not found: type Workbook
+[error]   val workbook: Workbook = new XSSFWorkbook()
+[error]                 ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:9:32: not found: type XSSFWorkbook
+[error]   val workbook: Workbook = new XSSFWorkbook()
+[error]                                ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:10:14: not found: type Sheet
+[error]   val sheet: Sheet = workbook.createSheet("Sales Summary")
+[error]              ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:17:14: not found: type Row
+[error]     val row: Row = sheet.createRow(rowCount)
+[error]              ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\CsvToExcelConverter.scala:21:17: not found: type Cell
+[error]       val cell: Cell = row.createCell(i)
+[error]                 ^
+[error] 7 errors found
+[debug] Forcing garbage collection...
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 3 s, completed 28 févr. 2024 11:51:59
+[debug] > Exec(idea-shell, None, None)

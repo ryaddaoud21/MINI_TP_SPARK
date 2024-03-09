@@ -1,0 +1,20 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\HP\IdeaProjects\MiniProjet_SPARK\target\scala-2.13\classes ...
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\SalesAnalysis.scala:31:9: reference to sum is ambiguous;
+[error] it is imported twice in the same scope by
+[error] import breeze.linalg._
+[error] and import org.apache.spark.sql.functions._
+[error]         sum("OrderQty").alias("Total_Quantity_Sold"),
+[error]         ^
+[error] C:\Users\HP\IdeaProjects\MiniProjet_SPARK\src\main\scala\SalesAnalysis.scala:32:9: reference to sum is ambiguous;
+[error] it is imported twice in the same scope by
+[error] import breeze.linalg._
+[error] and import org.apache.spark.sql.functions._
+[error]         sum("LineTotal").alias("Total_Revenue")
+[error]         ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 2 s, completed 29 févr. 2024 01:47:11
+[debug] > Exec(idea-shell, None, None)

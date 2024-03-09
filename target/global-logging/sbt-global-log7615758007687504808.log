@@ -1,0 +1,9 @@
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\HP\IdeaProjects\MiniProjet_SPARK\target\scala-2.13\classes ...
+[info] done compiling
+[success] Total time: 36 s, completed 29 févr. 2024 01:48:00
+[debug] > Exec(idea-shell, None, None)
+[warn] In the last 4 seconds, 6.415 (171,2%) were spent in GC. [Heap: 0,60GB free of 0,78GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 102 seconds, 8.005 (7,9%) were spent in GC. [Heap: 0,56GB free of 0,73GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
